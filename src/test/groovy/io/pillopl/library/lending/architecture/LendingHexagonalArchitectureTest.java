@@ -64,7 +64,9 @@ public class LendingHexagonalArchitectureTest {
                     .resideInAPackage("..ui..")
                     .should()
                     .dependOnClassesThat()
-                    .resideInAPackage("..infrastructure..");
+                    .resideInAPackage("..infrastructure..")
+                    .allowEmptyShould(true)
+                    ; // currently there is no ui package. once include remote this
 
 
 
